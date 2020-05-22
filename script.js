@@ -59,7 +59,11 @@ document.getElementById('task-title').style.padding = '20px';
 // document.getElementById('task-title').style.display = 'none';
 
 //change content
+document.getElementById('task-title').textContent = 'Task List';
+document.getElementById('task-title').innerText = 'My Tasks';
 
+//if we want to insert HTML --- why?
+document.getElementById('task-title').innerHTML = '<span style="color:brown">Tasks Lists</span>';
 
 
 
