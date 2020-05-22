@@ -29,6 +29,12 @@ val = document.links[5].classList[0];//clear-tasks;
 val = document.links[5].classList[1];//btn
 val = document.links[5].classList[2];//black
 
+val = document.images;//HTMLCollection[] empty as there are no images
+val = document.scripts;
+val = document.scripts[2].getAttribute('src');//script.js
+
+
+
 
 
 
