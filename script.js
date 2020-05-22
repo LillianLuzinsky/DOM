@@ -14,7 +14,11 @@ val = document.URL;
 val = document.characterSet;
 val = document.contentType;
 
-
+val = document.forms;
+val = document.forms[0];
+val = document.forms[0].id;//task-form
+val = document.forms[0].method;//get
+val = document.forms.method;//indefined - you need to specify which form to access
 
 
 console.log(val);
