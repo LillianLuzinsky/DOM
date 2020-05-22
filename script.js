@@ -1,4 +1,4 @@
-let val;
+
 
 // val = document;
 // val = document.all;//this gives us a collection
@@ -47,29 +47,34 @@ let val;
 //get element by id
 //document.getElementById()
 
-console.log(document.getElementById('task-title'));
+// console.log(document.getElementById('task-title'));
 
-//get things from the element
-console.log(document.getElementById('task-title').id);//task-title
+// //get things from the element
+// console.log(document.getElementById('task-title').id);//task-title
 
-//change styling
-document.getElementById('task-title').style.background = 'red';
-document.getElementById('task-title').style.color = 'white';
-document.getElementById('task-title').style.padding = '20px';
-// document.getElementById('task-title').style.display = 'none';
-
-
-//create a variable instead of repeating document.getElementById() so many times
-const taskTitle = document.getElementById('task-title');
+// //change styling
+// document.getElementById('task-title').style.background = 'red';
+// document.getElementById('task-title').style.color = 'white';
+// document.getElementById('task-title').style.padding = '20px';
+// // document.getElementById('task-title').style.display = 'none';
 
 
-//change content
-taskTitle.textContent = 'Task List';
-taskTitle.innerText = 'My Tasks';
-
-//if we want to insert HTML --- why?
-taskTitle.innerHTML = '<span style="color:brown">Tasks Lists</span>';
+// //create a variable instead of repeating document.getElementById() so many times
+// const taskTitle = document.getElementById('task-title');
 
 
+// //change content
+// taskTitle.textContent = 'Task List';
+// taskTitle.innerText = 'My Tasks';
 
-// console.log(val);
+// //if we want to insert HTML --- why?
+// taskTitle.innerHTML = '<span style="color:brown">Tasks Lists</span>';
+
+
+
+//-----QUERY SELECTOR------
+//document.querySelector() = newer and more powerful
+
+console.log(document.querySelector('#task-title'));
+console.log(document.querySelector('.card-title'));
+console.log(document.querySelector('h5'));//it'll give you the first one
