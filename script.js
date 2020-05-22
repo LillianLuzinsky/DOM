@@ -78,3 +78,15 @@
 console.log(document.querySelector('#task-title'));
 console.log(document.querySelector('.card-title'));
 console.log(document.querySelector('h5'));//it'll give you the first one
+
+document.querySelector('li').style.color = 'red';
+
+document.querySelector('li:last-child').style.color = 'blue';//use CSS pseudo class
+
+document.querySelector('li:nth-child(3)').style.color = 'green';
+
+document.querySelector('li:nth-child(4)').textContent = 'hello world';
+
+document.querySelector('li:nth-child(odd)').style.background = 'yellow';
+document.querySelector('li:nth-child(even)').style.background = 'orange';
+
