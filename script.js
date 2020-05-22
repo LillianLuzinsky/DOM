@@ -58,12 +58,17 @@ document.getElementById('task-title').style.color = 'white';
 document.getElementById('task-title').style.padding = '20px';
 // document.getElementById('task-title').style.display = 'none';
 
+
+//create a variable instead of repeating document.getElementById() so many times
+const taskTitle = document.getElementById('task-title');
+
+
 //change content
-document.getElementById('task-title').textContent = 'Task List';
-document.getElementById('task-title').innerText = 'My Tasks';
+taskTitle.textContent = 'Task List';
+taskTitle.innerText = 'My Tasks';
 
 //if we want to insert HTML --- why?
-document.getElementById('task-title').innerHTML = '<span style="color:brown">Tasks Lists</span>';
+taskTitle.innerHTML = '<span style="color:brown">Tasks Lists</span>';
 
 
 
