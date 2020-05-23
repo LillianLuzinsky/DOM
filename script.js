@@ -104,22 +104,46 @@
 // console.log(listItems);
 
 //get ElementsByTagName
-let lis = document.getElementsByTagName('li');
-console.log(lis);
-console.log(lis[0]);
-lis[0].style.background = 'orange';
-lis[3].textContent = 'Hello';
-lis[3].style.color = 'orange';
+// let lis = document.getElementsByTagName('li');
+// console.log(lis);
+// console.log(lis[0]);
+// lis[0].style.background = 'orange';
+// lis[3].textContent = 'Hello';
+// lis[3].style.color = 'orange';
 
-//convert HTML collection into an array
+// //convert HTML collection into an array
 
-lis = Array.from(lis);
-lis.textContent = 'hello';
-lis.reverse();
+// lis = Array.from(lis);
+// lis.textContent = 'hello';
+// lis.reverse();
 
-lis.forEach(function(li, index){
-    console.log(li.className);
-    li.textContent = `${index}: Hello`
+// lis.forEach(function(li, index){
+//     console.log(li.className);
+//     li.textContent = `${index}: Hello`
+// })
+
+// console.log(lis);
+
+
+//querySelectorAll(), which returns a node list
+//it allows us to return a forEach without having to convert it into an array
+
+const items = document.querySelectorAll('ul.collection li.collection-item');
+
+items.forEach(function(item, index){
+    item.textContent = `${index}: Hello`;  
 })
 
-console.log(lis);
+const liOdd = document.querySelectorAll('li:nth-child(odd');
+const liEven = document.querySelectorAll('li:nth-child(even');
+
+liOdd.forEach(function(li){
+    li.style.background = 'orange';  
+});
+
+liEven.forEach(function(li){
+    li.style.background = 'yellow';
+})
+
+console.log(items);//NodeList
+
