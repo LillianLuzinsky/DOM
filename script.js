@@ -145,5 +145,11 @@ liEven.forEach(function(li){
     li.style.background = 'yellow';
 })
 
+//for Loop
+
+for(let i=0; i < liEven.length; i++){
+    liEven[i].style.color = 'red';
+}
+
 console.log(items);//NodeList
 
