@@ -102,3 +102,21 @@
 
 // const listItems = document.querySelector('ul').getElementsByClassName('collection-item');
 // console.log(listItems);
+
+//get ElementsByTagName
+let lis = document.getElementsByTagName('li');
+console.log(lis);
+console.log(lis[0]);
+lis[0].style.background = 'orange';
+lis[3].textContent = 'Hello';
+lis[3].style.color = 'orange';
+
+//convert HTML collection into an array
+lis = Array.from(lis);
+lis.reverse();
+lis.forEach(function(li, index){
+    console.log(li.className);
+    li.textContent = `${index}: Hello`;
+})
+
+console.log(lis);
