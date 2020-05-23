@@ -112,11 +112,14 @@ lis[3].textContent = 'Hello';
 lis[3].style.color = 'orange';
 
 //convert HTML collection into an array
+
 lis = Array.from(lis);
+lis.textContent = 'hello';
 lis.reverse();
+
 lis.forEach(function(li, index){
     console.log(li.className);
-    li.textContent = `${index}: Hello`;
+    li.textContent = `${index}: Hello`
 })
 
 console.log(lis);
